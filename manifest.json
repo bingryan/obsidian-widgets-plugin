@@ -1,10 +1,10 @@
 {
-	"id": "obsidian-widgets-plugin",
-	"name": "widgets Plugin",
-	"version": "1.0.0",
-	"minAppVersion": "0.15.0",
-	"description": "This is a widget plugin for Obsidian. It provides very beautiful widgets",
-	"author": "bingryan",
-	"authorUrl": "https://github.com/bingryan/obsidian-widgets-plugin",
-	"isDesktopOnly": false
+  "id": "obsidian-widgets-plugin",
+  "name": "widgets Plugin",
+  "version": "1.0.1",
+  "minAppVersion": "0.15.0",
+  "description": "This is a widget plugin for Obsidian. It provides very beautiful widgets",
+  "author": "bingryan",
+  "authorUrl": "https://github.com/bingryan/obsidian-widgets-plugin",
+  "isDesktopOnly": false
 }
