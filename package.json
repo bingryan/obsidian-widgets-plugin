@@ -1,15 +1,23 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "obsidian-widgets-plugin",
 	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "This is a widget plugin for Obsidian. It provides very beautiful widgets",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
 		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+		"release": "auto shipit",
 		"version": "node version-bump.mjs && git add manifest.json versions.json"
 	},
-	"keywords": [],
-	"author": "",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bingryan/obsidian-widgets-plugin.git"
+	},
+	"keywords": [
+		"obsidian",
+		"widget"
+	],
+	"author": "bingryan",
 	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^16.11.6",

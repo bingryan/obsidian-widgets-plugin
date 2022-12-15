@@ -1,11 +1,10 @@
 {
-	"id": "obsidian-sample-plugin",
-	"name": "Sample Plugin",
+	"id": "obsidian-widgets-plugin",
+	"name": "widgets Plugin",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "This is a sample plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"description": "This is a widget plugin for Obsidian. It provides very beautiful widgets",
+	"author": "bingryan",
+	"authorUrl": "https://github.com/bingryan/obsidian-widgets-plugin",
 	"isDesktopOnly": false
 }
