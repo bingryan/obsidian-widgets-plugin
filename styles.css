@@ -1,8 +1,221 @@
-/*
-
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
-
-If your plugin does not need CSS, delete this file.
-
-*/
+/* src/styles.scss */
+.pomodoro .watch {
+  position: relative;
+  width: 320px;
+  height: 144px;
+  overflow: hidden;
+}
+.pomodoro .watch .watch-container {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  height: 144px;
+  width: 320px;
+  opacity: 1;
+}
+.pomodoro .watch .watch-container .watch-screen {
+  border-radius: 50px;
+  height: 144px;
+  width: 320px;
+  opacity: 1;
+}
+.pomodoro .watch .watch-container .watch-screen .action {
+  width: 267px;
+  height: 48px;
+  margin: 51px 0 0 33px;
+  opacity: 1;
+}
+.pomodoro .watch .watch-container .watch-screen .action .btn-container {
+  border-radius: 25px;
+  height: 48px;
+  margin-right: 13px;
+  width: 78px;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 1;
+  background: rgb(26, 26, 26);
+}
+.pomodoro .watch .watch-container .watch-screen .action .btn-container .btn {
+  width: 39px;
+  height: 17px;
+  overflow-wrap: break-word;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 17px;
+  margin: auto;
+  opacity: 1;
+}
+.pomodoro .watch .watch-container .watch-screen .action .btn-container .cancel {
+  color: #5b0ddb;
+}
+.pomodoro .watch .watch-container .watch-screen .action .btn-container .pause {
+  color: #4bfce1;
+}
+.pomodoro .watch .watch-container .watch-screen .action .btn-container .start {
+  color: #f9f871;
+}
+.pomodoro .watch .main {
+  height: 144px;
+  background-size: 100% 100%;
+  width: 250px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+.pomodoro .watch .main .time-container {
+  width: 89px;
+  height: 35px;
+  margin: 11px 0 0 117px;
+  opacity: 1;
+}
+.pomodoro .watch .main .time-container .time-screen {
+  width: 89px;
+  height: 35px;
+  overflow-wrap: break-word;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 35px;
+  opacity: 1;
+}
+.pomodoro .watch .main .music {
+  width: 128px;
+  height: 20px;
+  margin: 53px auto;
+}
+.pomodoro .watch .main .music .playContainer {
+  margin: 0 30px;
+  display: flex;
+}
+.pomodoro .watch .main .music .playContainer li {
+  position: absolute;
+  list-style-type: none;
+  border-radius: 100%;
+}
+.pomodoro .watch .main .music .playContainer a {
+  border-style: solid;
+  text-indent: -9999px;
+  position: absolute;
+}
+.pomodoro .watch .main .music .playContainer .playpause {
+  margin: 0 60px;
+}
+.pomodoro .watch .main .music .playContainer .playpause label {
+  display: block;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border-color: transparent transparent transparent #23a8f2;
+  transition: 100ms all ease;
+  cursor: pointer;
+  border-style: double;
+  border-width: 0px 20px;
+}
+.pomodoro .watch .main .music .playContainer .playpause input[type=checkbox] {
+  visibility: hidden;
+}
+.pomodoro .watch .main .music .playContainer .playpause input[type=checkbox]:checked + label {
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+}
+.pomodoro .watch .main .music .playContainer .next a {
+  border-color: transparent transparent transparent #23a8f2;
+  border-width: 10px 0 10px 10px;
+  top: 20px;
+}
+.pomodoro .watch .main .music .playContainer .next a:first-child {
+  margin-left: -7px;
+}
+.pomodoro .watch .main .music .playContainer .pre a {
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #23a8f2 transparent transparent;
+  top: 20px;
+  left: 128px;
+}
+.pomodoro .watch .main .music .playContainer .pre a:first-child {
+  margin-left: -7px;
+}
+.pomodoro {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  font-family:
+    PingFangSC-Regular,
+    Roboto,
+    Helvetica Neue,
+    Helvetica,
+    Tahoma,
+    Arial,
+    PingFang SC-Light,
+    Microsoft YaHei;
+}
+.pomodoro input {
+  background-color: transparent;
+  border: 0;
+}
+.pomodoro button {
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+  outline: none;
+  background-color: transparent;
+}
+.pomodoro button:active {
+  opacity: 0.6;
+}
+.pomodoro .van-nav-bar__left:active {
+  opacity: 1;
+}
+.pomodoro .van-nav-bar__right:active {
+  opacity: 1;
+}
+.pomodoro [class*=van-]::after {
+  border-bottom: 0;
+}
+.pomodoro .flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.pomodoro .flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.pomodoro .justify-start {
+  display: flex;
+  justify-content: flex-start;
+}
+.pomodoro .justify-center {
+  display: flex;
+  justify-content: center;
+}
+.pomodoro .justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.pomodoro .justify-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pomodoro .justify-around {
+  display: flex;
+  justify-content: space-around;
+}
+.pomodoro .justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+.pomodoro .align-start {
+  display: flex;
+  align-items: flex-start;
+}
+.pomodoro .align-center {
+  display: flex;
+  align-items: center;
+}
+.pomodoro .align-end {
+  display: flex;
+  align-items: flex-end;
+}
