@@ -1,3 +1,15 @@
+# 1.0.3 (Fri Dec 16 2022)
+
+#### 🐛 Bug Fix
+
+- add pomodoro clock [#2](https://github.com/bingryan/obsidian-widgets-plugin/pull/2) ([@bingryan](https://github.com/bingryan))
+
+#### Authors: 1
+
+- [@bingryan](https://github.com/bingryan)
+
+---
+
 # 1.0.2 (Thu Dec 15 2022)
 
 #### 🐛 Bug Fix
