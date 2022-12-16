@@ -1,7 +1,7 @@
 {
   "id": "obsidian-widgets-plugin",
   "name": "widgets Plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "minAppVersion": "0.15.0",
   "description": "This is a widget plugin for Obsidian. It provides very beautiful widgets",
   "author": "bingryan",
