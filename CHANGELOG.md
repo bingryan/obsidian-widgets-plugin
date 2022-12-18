@@ -1,3 +1,15 @@
+# 1.0.6 (Sun Dec 18 2022)
+
+#### 🐛 Bug Fix
+
+- update default session time param [#5](https://github.com/bingryan/obsidian-widgets-plugin/pull/5) ([@bingryan](https://github.com/bingryan))
+
+#### Authors: 1
+
+- [@bingryan](https://github.com/bingryan)
+
+---
+
 # 1.0.5 (Sun Dec 18 2022)
 
 #### 🐛 Bug Fix
