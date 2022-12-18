@@ -1,3 +1,15 @@
+# 1.0.4 (Sun Dec 18 2022)
+
+#### 🐛 Bug Fix
+
+- update widgets view [#3](https://github.com/bingryan/obsidian-widgets-plugin/pull/3) ([@bingryan](https://github.com/bingryan))
+
+#### Authors: 1
+
+- [@bingryan](https://github.com/bingryan)
+
+---
+
 # 1.0.3 (Fri Dec 16 2022)
 
 #### 🐛 Bug Fix
