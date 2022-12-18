@@ -1,97 +1,32 @@
 @import "./assets/pomodoro.scss";
 
-.pomodoro {
-	box-sizing: border-box;
-	flex-shrink: 0;
-	font-family: PingFangSC-Regular, Roboto, Helvetica Neue, Helvetica, Tahoma, Arial, PingFang SC-Light, Microsoft YaHei;
-	input {
-		background-color: transparent;
-		border: 0;
-	}
+.widgets-setting-item {
+	font-weight: bold;
+}
 
-	button {
-		margin: 0;
-		padding: 0;
-		border: 1px solid transparent;
-		outline: none;
-		background-color: transparent;
+.widgets-pomodoro-setting-item {
+	display: block;
+}
 
-		&:active {
-			opacity: 0.6;
-		}
-	}
+.widgets-pomodoro-settings-audio-label {
+	width: 30%;
+}
 
-	.van-nav-bar__left {
-		&:active {
-			opacity: 1;
-		}
-	}
+.widgets-pomodoro-settings-audio-value {
+	width: 68%;
+}
 
-	.van-nav-bar__right {
-		&:active {
-			opacity: 1;
-		}
-	}
+.widgets-pomodoro-setting-icon {
+	display: flex;
+	height: 24px;
+	width: 24px;
+}
 
-	[class*='van-'] {
-		&::after {
-			border-bottom: 0;
-		}
-	}
-
-	.flex-col {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.flex-row {
-		display: flex;
-		flex-direction: row;
-	}
-
-	.justify-start {
-		display: flex;
-		justify-content: flex-start;
-	}
-
-	.justify-center {
-		display: flex;
-		justify-content: center;
-	}
-
-	.justify-end {
-		display: flex;
-		justify-content: flex-end;
-	}
-
-	.justify-evenly {
-		display: flex;
-		justify-content: space-evenly;
-	}
-
-	.justify-around {
-		display: flex;
-		justify-content: space-around;
-	}
-
-	.justify-between {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.align-start {
-		display: flex;
-		align-items: flex-start;
-	}
-
-	.align-center {
-		display: flex;
-		align-items: center;
-	}
-
-	.align-end {
-		display: flex;
-		align-items: flex-end;
-	}
-
+.widgets-pomodoro-item-draggable {
+	cursor: grab;
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: 0.5fr 7fr;
+	align-items: center;
+	border-top: 1px solid var(--background-modifier-border);
 }
