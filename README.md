@@ -7,9 +7,15 @@
 - [x]  The alarm clock rings for time up
 - [x]  Custom audio/music/alarm
 
+<video id="video" x-webkit-airplay="true" webkit-playsinline="true" controls>
+   <source src="./docs/video/wedgets-pomodoro.mp4" type="video/mp4">
+</video>
+
+
 ## Widget List
 
 ![pomodoro](./docs/image/pomodoro.png)
+
 
 
 ## Settings
