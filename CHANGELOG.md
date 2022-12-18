@@ -1,3 +1,19 @@
+# 1.0.8 (Sun Dec 18 2022)
+
+#### 🐛 Bug Fix
+
+- update pomodoro video link [#7](https://github.com/bingryan/obsidian-widgets-plugin/pull/7) ([@bingryan](https://github.com/bingryan))
+
+#### ⚠️ Pushed to `master`
+
+- Update README.md ([@bingryan](https://github.com/bingryan))
+
+#### Authors: 1
+
+- [@bingryan](https://github.com/bingryan)
+
+---
+
 # 1.0.7 (Sun Dec 18 2022)
 
 #### 🐛 Bug Fix
