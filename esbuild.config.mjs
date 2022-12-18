@@ -22,7 +22,7 @@ esbuild
 			"process.env.NODE_ENV": '"production"',
 		},
 		plugins: [vue()],
-		entryPoints: ["src/main.ts"],
+		entryPoints: ["src/plugin.ts"],
 		bundle: true,
 		external: [
 			"obsidian",

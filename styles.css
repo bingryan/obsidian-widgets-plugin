@@ -1,4 +1,12 @@
 /* src/styles.scss */
+.pomodoro .flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.pomodoro .flex-row {
+  display: flex;
+  flex-direction: row;
+}
 .pomodoro .watch {
   position: relative;
   width: 320px;
@@ -139,83 +147,28 @@
 .pomodoro .watch .main .music .playContainer .pre a:first-child {
   margin-left: -7px;
 }
-.pomodoro {
-  box-sizing: border-box;
-  flex-shrink: 0;
-  font-family:
-    PingFangSC-Regular,
-    Roboto,
-    Helvetica Neue,
-    Helvetica,
-    Tahoma,
-    Arial,
-    PingFang SC-Light,
-    Microsoft YaHei;
+.widgets-setting-item {
+  font-weight: bold;
 }
-.pomodoro input {
-  background-color: transparent;
-  border: 0;
+.widgets-pomodoro-setting-item {
+  display: block;
 }
-.pomodoro button {
-  margin: 0;
-  padding: 0;
-  border: 1px solid transparent;
-  outline: none;
-  background-color: transparent;
+.widgets-pomodoro-settings-audio-label {
+  width: 30%;
 }
-.pomodoro button:active {
-  opacity: 0.6;
+.widgets-pomodoro-settings-audio-value {
+  width: 68%;
 }
-.pomodoro .van-nav-bar__left:active {
-  opacity: 1;
-}
-.pomodoro .van-nav-bar__right:active {
-  opacity: 1;
-}
-.pomodoro [class*=van-]::after {
-  border-bottom: 0;
-}
-.pomodoro .flex-col {
+.widgets-pomodoro-setting-icon {
   display: flex;
-  flex-direction: column;
+  height: 24px;
+  width: 24px;
 }
-.pomodoro .flex-row {
-  display: flex;
-  flex-direction: row;
-}
-.pomodoro .justify-start {
-  display: flex;
-  justify-content: flex-start;
-}
-.pomodoro .justify-center {
-  display: flex;
-  justify-content: center;
-}
-.pomodoro .justify-end {
-  display: flex;
-  justify-content: flex-end;
-}
-.pomodoro .justify-evenly {
-  display: flex;
-  justify-content: space-evenly;
-}
-.pomodoro .justify-around {
-  display: flex;
-  justify-content: space-around;
-}
-.pomodoro .justify-between {
-  display: flex;
-  justify-content: space-between;
-}
-.pomodoro .align-start {
-  display: flex;
-  align-items: flex-start;
-}
-.pomodoro .align-center {
-  display: flex;
+.widgets-pomodoro-item-draggable {
+  cursor: grab;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 0.5fr 7fr;
   align-items: center;
-}
-.pomodoro .align-end {
-  display: flex;
-  align-items: flex-end;
+  border-top: 1px solid var(--background-modifier-border);
 }
