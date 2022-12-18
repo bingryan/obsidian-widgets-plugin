@@ -52,14 +52,18 @@ export class WidgetsPluginSettingTab extends PluginSettingTab {
 		new Setting(this.containerEl)
 			.setName("Pomodoro Session Time")
 			.setClass("widgets-setting-item")
-			.setDesc("How long time(millisecond) by a single session?(need reload obsidian)")
+			.setDesc(
+				"How long time(millisecond) by a single session?(need reload obsidian)"
+			)
 			.addText((textfield) => {
 				textfield.setPlaceholder(
 					String(DEFAULT_SETTINGS.pomodoro.sessionTime)
 				);
 				textfield.inputEl.type = "number";
-				textfield.setValue(String(this.plugin.settings.pomodoro.sessionTime));
-				textfield.onChange(async (value) => {	  
+				textfield.setValue(
+					String(this.plugin.settings.pomodoro.sessionTime)
+				);
+				textfield.onChange(async (value) => {
 					this.plugin.settings.pomodoro.sessionTime = Number(value);
 					this.plugin.saveSettings();
 					this.plugin.saveData(this.plugin.settings);
@@ -129,10 +133,10 @@ export class WidgetsPluginSettingTab extends PluginSettingTab {
 			forceFallback: true,
 			fallbackClass: "widgets-pomodoro-sortable-fallback",
 			easing: "cubic-bezier(1, 0, 0, 1)",
-			onSort: (command: { oldIndex: number; newIndex: number }) => {
+			onSort: (event) => {
 				const arrayResult = this.plugin.settings.pomodoro.musicOrder;
-				const [removed] = arrayResult.splice(command.oldIndex, 1);
-				arrayResult.splice(command.newIndex, 0, removed);
+				const [removed] = arrayResult.splice(Number(event.oldIndex), 1);
+				arrayResult.splice(Number(event.newIndex), 0, removed);
 				this.plugin.settings.pomodoro.musicOrder = arrayResult;
 				this.plugin.saveSettings();
 			},
