@@ -8,8 +8,12 @@
 - [x]  Custom audio/music/alarm
 
 <video id="video" x-webkit-airplay="true" webkit-playsinline="true" controls>
-   <source src="https://raw.githubusercontent.com/bingryan/obsidian-widgets-plugin/master/docs/video/wedgets-pomodoro.mp4" type="video/mp4">
+   <source src="https://user-images.githubusercontent.com/41174435/208292102-5931bdff-223c-47fa-b28b-379902452f24.mp4" type="video/mp4">
 </video>
+
+
+
+
 
 
 ## Widget List
