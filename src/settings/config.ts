@@ -7,7 +7,7 @@ export interface WidgetsPluginSettings {
 
 export const DEFAULT_SETTINGS: WidgetsPluginSettings = {
 	pomodoro: {
-		sessionTime: 8,
+		sessionTime: 1500,
 		alarm: 'bell',
 		musics: {
 			bell: "https://soundbible.com/mp3/tolling-bell_daniel-simion.mp3",
