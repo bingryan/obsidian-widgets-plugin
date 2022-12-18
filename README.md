@@ -14,7 +14,7 @@
 
 ## Settings
 
-![Settings](./docs/image/widgets-settings.png)
+![Settings](./docs/image/widgets-setting.png)
 ## How to Install
 
 ### From within Obsidian
