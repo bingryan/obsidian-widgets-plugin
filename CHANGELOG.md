@@ -1,3 +1,15 @@
+# 1.0.9 (Thu Dec 22 2022)
+
+#### 🐛 Bug Fix
+
+- add calendar [#8](https://github.com/bingryan/obsidian-widgets-plugin/pull/8) ([@bingryan](https://github.com/bingryan))
+
+#### Authors: 1
+
+- [@bingryan](https://github.com/bingryan)
+
+---
+
 # 1.0.8 (Sun Dec 18 2022)
 
 #### 🐛 Bug Fix
