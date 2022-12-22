@@ -1,4 +1,7 @@
 .pomodoro {
+	width: 100%;
+	margin-top: 10px;
+
 	.flex-col {
 		display: flex;
 		flex-direction: column;
@@ -11,7 +14,7 @@
 
 	.watch {
 		position: relative;
-		width: 320px;
+		width: 100%;
 		height: 144px;
 		overflow: hidden;
 
@@ -19,27 +22,25 @@
 			background-color: rgba(0, 0, 0, 1);
 			border-radius: 50px;
 			height: 144px;
-			width: 320px;
-			opacity: 1;
+			width: 100%;
 
 			.watch-screen {
-				border-radius: 50px;
-				height: 144px;
-				width: 320px;
-				opacity: 1;
+				height: 100vh;
+				width: 100vw;
 
 				.action {
-					width: 267px;
-					height: 48px;
-					margin: 51px 0 0 33px;
-					opacity: 1;
-
+					width: 80vw;
+					margin: 52px 32px;
+					display: flex;
+					align-items: center;
+					justify-content: baseline;
+					
 					.btn-container {
 						border-radius: 25px;
 						height: 48px;
 						margin-right: 13px;
 						width: 78px;
-						opacity: 1;
+						text-align: center;
 						cursor: pointer;
 						z-index: 1;
 						background: rgba(26, 26, 26, 1);
@@ -54,7 +55,6 @@
 							white-space: nowrap;
 							line-height: 17px;
 							margin: auto;
-							opacity: 1;
 						}
 
 						.cancel {

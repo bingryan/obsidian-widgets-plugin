@@ -102,6 +102,7 @@ main.js
 
 # obsidian
 data.json
+styles.css
 
 # Exclude macOS Finder (System Explorer) View States
 .DS_Store
@@ -111,3 +112,5 @@ data.json
 
 # .env
 .env
+
+main.css
