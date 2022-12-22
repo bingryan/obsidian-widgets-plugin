@@ -52,7 +52,7 @@ esbuild
 	.catch(() => process.exit(1));
 
 // scss
-await esbuild.build({
+esbuild.build({
 	entryPoints: ["./src/styles.scss"],
 	plugins: [sassPlugin()],
 	outfile: "styles.css",
