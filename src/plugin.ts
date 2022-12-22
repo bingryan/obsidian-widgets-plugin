@@ -3,6 +3,7 @@ import { WidgetsPluginSettings, DEFAULT_SETTINGS } from "@/settings/config";
 import { WidgetsView } from "@/views/WidgetsView";
 import { WidgetsPluginSettingTab } from "@/settings/settingsTab";
 
+
 export default class WidgetsPlugin extends Plugin {
 	settings: WidgetsPluginSettings;
 	private widgetsView: WidgetsView;
