@@ -9,6 +9,7 @@ import WidgetsPlugin from "@/plugin";
 import Sortable from "sortablejs";
 import { DEFAULT_SETTINGS } from "@/settings/config";
 
+
 export class WidgetsPluginSettingTab extends PluginSettingTab {
 	plugin: WidgetsPlugin;
 
@@ -34,7 +35,7 @@ export class WidgetsPluginSettingTab extends PluginSettingTab {
 				`This selects a music from pomodoro music as an alarm clock`
 			)
 			.addDropdown((dropdown) => {
-				let chooses: Record<string, string> = {};
+				const chooses: Record<string, string> = {};
 				this.plugin.settings.pomodoro.musicOrder.map(
 					(label) => (chooses[label] = label)
 				);
@@ -92,9 +93,9 @@ export class WidgetsPluginSettingTab extends PluginSettingTab {
 				.setClass("widgets-pomodoro-settings-button-add")
 				.setIcon("checkmark")
 				.setTooltip("Save")
-				.onClick(async (buttonEl: any) => {
-					let label = labelInput.inputEl.value.replace(" ", "-");
-					let url = urlInput.inputEl.value;
+				.onClick(async (buttonEl: Event) => {
+					const label = labelInput.inputEl.value.replace(" ", "-");
+					const url = urlInput.inputEl.value;
 
 					if (label && url) {
 						if (

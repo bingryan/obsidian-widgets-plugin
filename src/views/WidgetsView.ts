@@ -1,11 +1,11 @@
-import { ItemView, WorkspaceLeaf, Notice } from 'obsidian';
+import { ItemView, WorkspaceLeaf } from 'obsidian';
 import { createApp, App } from 'vue';
 import Pomodoro from '@/components/Pomodoro.vue';
 import Calendar from '@/components/Calendar.vue';
 import WidgetsPlugin from '@/plugin'
 
-export const Widgets_ICON: string = "clock";
-export const Widgets_VIEW_TYPE: string = 'widgets';
+export const Widgets_ICON = "clock";
+export const Widgets_VIEW_TYPE = 'widgets';
 
 export class WidgetsView extends ItemView {
 	calendarApp: App;
@@ -28,14 +28,14 @@ export class WidgetsView extends ItemView {
 
 		const widgetContainer = this.containerEl.children[1];
 
-		let calendarEl = widgetContainer.createDiv({ cls: "calendar" });
+		const calendarEl = widgetContainer.createDiv({ cls: "calendar" });
 		this.calendarApp = createApp(Calendar);
 		this.calendarApp.config.globalProperties.container = calendarEl;
 		this.calendarApp.config.globalProperties.plugin = this.plugin;
 		this.calendarApp.mount(calendarEl);
 
 
-		let pomodoroEl = widgetContainer.createDiv({ cls: "pomodoro" });
+		const pomodoroEl = widgetContainer.createDiv({ cls: "pomodoro" });
 		this.pomodoroApp = createApp(Pomodoro);
 		this.pomodoroApp.config.globalProperties.container = pomodoroEl;
 		this.pomodoroApp.config.globalProperties.plugin = this.plugin;
