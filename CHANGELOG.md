@@ -1,3 +1,16 @@
+# 1.0.10 (Mon Mar 20 2023)
+
+#### 🐛 Bug Fix
+
+- docs: update readme [#11](https://github.com/bingryan/obsidian-widgets-plugin/pull/11) ([@bingryan](https://github.com/bingryan))
+- ci: add lint and build workflow [#10](https://github.com/bingryan/obsidian-widgets-plugin/pull/10) ([@bingryan](https://github.com/bingryan))
+
+#### Authors: 1
+
+- [@bingryan](https://github.com/bingryan)
+
+---
+
 # 1.0.9 (Thu Dec 22 2022)
 
 #### 🐛 Bug Fix
