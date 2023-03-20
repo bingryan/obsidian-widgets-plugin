@@ -1,4 +1,4 @@
-# Obsidian Widgets Plugin
+# Obsidian Widgets Plugin(WIP)
 
 ## Features
 ### Pomodoro Timer
@@ -7,13 +7,7 @@
 - [x]  The alarm clock rings for time up
 - [x]  Custom audio/music/alarm
 
-<video id="video" x-webkit-airplay="true" webkit-playsinline="true" controls>
-   <source src="https://user-images.githubusercontent.com/41174435/208292102-5931bdff-223c-47fa-b28b-379902452f24.mp4" type="video/mp4">
-</video>
-
-
-
-
+https://user-images.githubusercontent.com/41174435/208292102-5931bdff-223c-47fa-b28b-379902452f24.mp4
 
 
 ## Widget List
