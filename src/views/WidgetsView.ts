@@ -1,7 +1,6 @@
 import { ItemView, WorkspaceLeaf } from 'obsidian';
 import { createApp, App } from 'vue';
 import Pomodoro from '@/components/Pomodoro.vue';
-import Calendar from '@/components/Calendar.vue';
 import WidgetsPlugin from '@/plugin'
 
 export const Widgets_ICON = "clock";
@@ -28,12 +27,11 @@ export class WidgetsView extends ItemView {
 
 		const widgetContainer = this.containerEl.children[1];
 
-		const calendarEl = widgetContainer.createDiv({ cls: "calendar" });
-		this.calendarApp = createApp(Calendar);
-		this.calendarApp.config.globalProperties.container = calendarEl;
-		this.calendarApp.config.globalProperties.plugin = this.plugin;
-		this.calendarApp.mount(calendarEl);
-
+		// const calendarEl = widgetContainer.createDiv({ cls: "calendar" });
+		// this.calendarApp = createApp(Calendar);
+		// this.calendarApp.config.globalProperties.container = calendarEl;
+		// this.calendarApp.config.globalProperties.plugin = this.plugin;
+		// this.calendarApp.mount(calendarEl);
 
 		const pomodoroEl = widgetContainer.createDiv({ cls: "pomodoro" });
 		this.pomodoroApp = createApp(Pomodoro);
